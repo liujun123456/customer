@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">intelligent</string>
+    <string name="visit_notice">\"请填写就诊卡方便我为你就诊哦~\"</string>
+    <string name="visit_ing">接诊中...</string>
+    <string name="press_voice">按住说话</string>
+    <string name="start_voice">松开结束</string>
+</resources>

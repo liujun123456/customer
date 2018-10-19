@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <incloud.enn.cn.commonlib.view.sRecyclerView.SRecyclerView
+        android:id="@+id/inquisition_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#efeff9">
+    </incloud.enn.cn.commonlib.view.sRecyclerView.SRecyclerView>
+</LinearLayout>

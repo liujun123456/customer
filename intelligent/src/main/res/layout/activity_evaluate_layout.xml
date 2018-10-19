@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="35dp"
+    android:paddingLeft="35dp"
+    android:background="@color/white"
+    android:gravity="center_horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        >
+        <LinearLayout
+            android:id="@+id/info_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/doctor_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="李丽艳"
+                android:textSize="20dp"
+                android:textColor="#313131"
+                android:textStyle="bold"/>
+            <View
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:background="@drawable/gray_dian_bg"></View>
+            <TextView
+                android:id="@+id/doctor_pos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="健康师"
+                android:textSize="20dp"
+                android:textColor="#313131"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_below="@id/info_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上海华山医院    肠胃外科"
+            android:layout_marginTop="11dp"
+            android:textSize="14dp"
+            android:textColor="#999999" />
+
+        <incloud.enn.cn.commonlib.view.PhotoView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            fresco:roundAsCircle="true"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            fresco:placeholderImage="@mipmap/pic_robot"
+            fresco:placeholderImageScaleType="fitXY"
+            />
+
+    </RelativeLayout>
+
+    <com.hedgehog.ratingbar.RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:clickable="true"
+        app:halfstart="false"
+        app:starCount="5"
+        app:starEmpty="@mipmap/pic_star_b"
+        app:starFill="@mipmap/pic_star_b_pre"
+        app:starImageHeight="30dp"
+        app:starImageWidth="30dp"
+        app:starImagePadding="10dp"
+        android:layout_marginTop="50dp"
+        ></com.hedgehog.ratingbar.RatingBar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:textSize="13dp"
+            android:textColor="#ffab3e"
+            android:text="耐心"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center"
+            android:background="@drawable/orange_bg"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:textSize="13dp"
+            android:textColor="#ffab3e"
+            android:text="贴心服务"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/orange_empty_bg"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:textSize="13dp"
+            android:textColor="#ffab3e"
+            android:text="医术高明"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center"
+            android:background="@drawable/orange_empty_bg"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="25dp"
+        android:background="@mipmap/line_dot_or"></View>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@null"
+        android:gravity="top"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="15dp"
+        android:hint="说说你的感受，让我为你更好的服务~"
+        android:textColor="#666666"
+        android:textSize="14dp"/>
+    <TextView
+        android:layout_width="145dp"
+        android:layout_height="40dp"
+        android:background="@drawable/orange_button_bg"
+        android:text="完成"
+        android:gravity="center"
+        android:textSize="14dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#ffffff"
+        />
+
+
+</LinearLayout>

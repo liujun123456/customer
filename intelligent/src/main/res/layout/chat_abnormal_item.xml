@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/robot_message_bg"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="异常指标解读"
+            android:textSize="17dp"
+            android:gravity="center_vertical"
+            android:textColor="#ff8f5d"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#eeeeee"></View>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="肠胃不舒服，胃口较差"
+            android:lineSpacingExtra="2px"
+            android:textSize="15dp"
+            android:textColor="#666666"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:maxLines="3"
+            android:ellipsize="end"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#eeeeee"></View>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:text="健康档案"
+            android:textSize="13dp"
+            android:textColor="#ff8f5d"
+            android:drawableRight="@mipmap/icon_font_ss"/>
+
+    </LinearLayout>
+
+</LinearLayout>

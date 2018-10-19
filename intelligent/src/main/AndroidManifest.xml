@@ -1,0 +1,46 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="incloud.enn.cn.intelligent" >
+    <uses-permission android:name="android.permission.RECORD_AUDIO"></uses-permission>
+    <application>
+        <activity android:name=".activities.visit.VisitCardActivity"
+            android:launchMode="singleTask"
+            android:configChanges="keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activities.intelligent.IntelligentActivity"
+            android:launchMode="singleTask"
+            android:configChanges="keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity">
+        </activity>
+
+        <activity android:name=".activities.inquisition.InquisitionActivity"
+            android:launchMode="singleTask"
+            android:configChanges="keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity">
+
+        </activity>
+
+        <activity android:name=".activities.evaluate.EvaluateActivity"
+            android:launchMode="singleTask"
+            android:configChanges="keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeActivity">
+
+        </activity>
+
+
+    </application>
+
+
+
+</manifest>
+

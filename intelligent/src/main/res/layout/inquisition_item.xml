@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="165dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <incloud.enn.cn.commonlib.view.PhotoView
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                fresco:roundAsCircle="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                fresco:placeholderImage="@mipmap/pic_robot"
+                fresco:placeholderImageScaleType="fitXY"
+                android:id="@+id/photoView" />
+
+            <TextView
+                android:id="@+id/doctor_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="李丽艳"
+                android:textSize="13dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="#313131" />
+            <View
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="3dp"
+                android:layout_height="3dp"
+                android:background="@drawable/gray_dian_bg"></View>
+            <TextView
+                android:id="@+id/doctor_pos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="健康师"
+                android:textSize="13dp"
+                android:textColor="#313131" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="已完成"
+                android:textSize="13dp"
+                android:textColor="#999999"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#eeeeee"></View>
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:paddingTop="15dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:text="30岁 男性 肠胃不舒服，头晕眼花"
+            android:textSize="15dp"
+            android:textColor="#313131"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#eeeeee"></View>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="2018/08/20 16:40"
+                android:textSize="12dp"
+                android:textColor="#999999"/>
+
+            <com.hedgehog.ratingbar.RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                app:clickable="false"
+                app:halfstart="false"
+                app:starCount="5"
+                app:starEmpty="@mipmap/pic_star_b"
+                app:starFill="@mipmap/pic_star_b_pre"
+                app:starImageHeight="20dp"
+                app:starImageWidth="20dp"
+                app:starImagePadding="5dp"
+                ></com.hedgehog.ratingbar.RatingBar>
+        </RelativeLayout>
+        
+    </LinearLayout>
+
+</LinearLayout>
